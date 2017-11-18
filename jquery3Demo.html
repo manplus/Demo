@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+hide5<head>
+    <meta charset="UTF-8">
+    <script  src="jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+           $(".ex .hide").click(function () {
+              $(this).parents(".ex").hide("slow");
+          });
+       });
+
+        </script>
+    <style type="text/css">
+        div.ex{
+            background-color: #e5eecc;
+            padding: 7px;
+            border:solid 1px #c3c3c3;
+        }
+    </style>
+
+</head>
+background-color<body>
+<h3>A人员名单</h3>
+<div class="ex" >
+    <button class="hide" type="button">点击隐藏</button>
+    <p>
+        联系人：A<br/>
+        地址 <br/>
+
+    </p>
+</div>
+<h3>B人员名单</h3>
+<div class="ex">
+    <button class="hide" type="button">点击隐藏</button>
+    <p>
+        联系人：B<br/>
+        地址<br/>
+    </p>
+</div>
+</body>
+</html>

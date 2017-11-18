@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        div{
+            background-color: #e5eecc;
+            padding: 7px;
+            border: #c3c3c3;
+        }
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".hide1").click(function () {
+                $(".ex1").hide("slow");
+            });
+            $(".hide2").click(function () {
+                $(".ex1").show("slow");
+            });
+            $(".hide3").click(function () {
+                $(".ex2").hide("slow");
+            });
+            $(".hide4").click(function () {
+                $(".ex2").show("slow");
+            });
+            $(".hide5").click(function () {
+                $(".ex3").hide("slow");
+            });
+            $(".hide6").click(function () {
+                $(".ex3").show("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+<h3>A 人员名单：</h3>
+<button class="hide1" type="button">点击隐藏</button>
+<button class="hide2" type="button">点击显示</button>
+<div class="ex1" >
+
+    <p >
+       <tr>
+           姓名：
+         <input style="width: 15%">
+        </tr><br/>
+
+        <tr> 地址： <input style="width: 15%"></tr><br/>
+        <tr> 联系方式： <input></tr><br/>
+    </p>
+</div>
+<h3>B人员名单：</h3>
+<button class="hide3" type="button">点击隐藏</button>
+<button class="hide4" type="button">点击显示</button>
+<div class="ex2">
+
+    <p>
+        <tr>
+            姓名：
+            <input style="width: 15%">
+        </tr><br/>
+
+        <tr> 地址： <input style="width: 15%"></tr><br/>
+        <tr> 联系方式： <input></tr><br/>
+    </p>
+</div>
+<h3>C人员名单</h3>
+<button class="hide5" type="button">点击隐藏</button>
+<button class="hide6" type="button">点击显示</button>
+<div class="ex3">
+
+    <p>
+        <tr>
+            姓名：
+            <input style="width: 15%">
+        </tr><br/>
+
+        <tr> 地址： <input style="width: 15%"></tr><br/>
+        <tr> 联系方式： <input></tr><br/>
+    <p/>
+</div>
+</body>
+</html>
